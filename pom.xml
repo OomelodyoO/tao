@@ -12,6 +12,7 @@
         <module>tao-common</module>
         <module>tao-data</module>
         <module>tao-ops</module>
+        <module>tao-gateway</module>
     </modules>
 
     <properties>

@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.102.254:8848
+        namespace: dev
+        group: dev
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: data
+          uri: lb://data
+          predicates:
+            - Path=/data/**
+          filters:
+            - StripPrefix=1
