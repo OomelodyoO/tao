@@ -21,6 +21,11 @@
             <version>alpha</version>
         </dependency>
         <dependency>
+            <groupId>win.zhangzhixing</groupId>
+            <artifactId>tao-mbg</artifactId>
+            <version>alpha</version>
+        </dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>

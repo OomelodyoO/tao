@@ -5,3 +5,19 @@ spring:
         server-addr: 192.168.102.254:8848
         namespace: dev
         group: dev
+  datasource:
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.102.254:3306/tao
+    username: root
+    druid:
+      initial-size: 5 #连接池初始化大小
+      min-idle: 10 #最小空闲连接数
+      max-active: 20 #最大连接数
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

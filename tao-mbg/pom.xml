@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <name>tao-mbg</name>
+    <artifactId>tao-mbg</artifactId>
+    <version>alpha</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <artifactId>tao</artifactId>
+        <groupId>win.zhangzhixing</groupId>
+        <version>alpha</version>
+    </parent>
+
+    <properties>
+        <mysql.connector.java.version>8.0.26</mysql.connector.java.version>
+        <mybatis.spring.boot.starter.version>2.2.0</mybatis.spring.boot.starter.version>
+        <druid.spring.boot.starter.version>1.2.6</druid.spring.boot.starter.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.connector.java.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.spring.boot.starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.spring.boot.starter.version}</version>
+        </dependency>
+    </dependencies>
+</project>
