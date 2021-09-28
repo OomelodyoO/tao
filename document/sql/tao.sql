@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS tao
 
 USE tao;
 
-CREATE TABLE IF NOT EXISTS `t_user`
+CREATE TABLE IF NOT EXISTS `user`
 (
     `id`          VARCHAR(32) NOT NULL,
     `username`    VARCHAR(64) DEFAULT NULL,

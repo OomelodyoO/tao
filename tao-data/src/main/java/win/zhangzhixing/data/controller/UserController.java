@@ -22,8 +22,7 @@ public class UserController {
 
     @GetMapping
     public ResponseData<List<User>> index() {
-        final User user = userMapper.selectByPrimaryKey(1);
-        return ResponseData.success(userMapper.query());
+        return ResponseData.success(userMapper.selectAll());
     }
 
     @GetMapping(value = "/error")

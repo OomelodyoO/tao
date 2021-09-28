@@ -18,6 +18,3 @@ spring:
   jackson:
     serialization:
       write-dates-as-timestamps: true
-mybatis:
-  configuration:
-    map-underscore-to-camel-case: true
